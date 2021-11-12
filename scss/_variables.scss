@@ -1,0 +1,13 @@
+$darkgrey:rgb(50, 50, 50);
+$whitetext:rgb(237, 237, 237);
+$blacktext: rgb(2,2,2);
+$whiteback: rgb(250,250,250);
+$lightgreyback: rgb(100,100,100):
+
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

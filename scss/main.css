@@ -1,0 +1,89 @@
+h1 {
+  font-size: 5rem;
+  color: #ededed;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: #ededed;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #ededed;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ededed;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #ededed;
+}
+
+.wrapper {
+  background-color: #323232;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 15rem auto 10rem;
+  grid-template-areas: "he he" "ma as" "fo fo";
+}
+.wrapper header {
+  grid-area: he;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.wrapper main {
+  grid-area: ma;
+}
+.wrapper main h2 {
+  color: #020202;
+  padding: 1rem;
+  background-color: #fafafa;
+}
+.wrapper aside {
+  grid-area: as;
+}
+.wrapper footer {
+  grid-area: fo;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #ededed;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: #ededed;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #ededed;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ededed;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #ededed;
+}
+
+*, html {
+  padding: 0%;
+  margin: 0%;
+}
+
+img {
+  height: 20rem;
+  width: auto;
+}/*# sourceMappingURL=main.css.map */

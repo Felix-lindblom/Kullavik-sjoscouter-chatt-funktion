@@ -1,0 +1,40 @@
+@import'./variables';
+@import'./typograpghy';
+
+.wrapper{
+    background-color: $darkgrey;
+    display: grid;
+    grid-template-columns:3fr 1fr ;
+    grid-template-rows:15rem auto 10rem ;
+    grid-template-areas: 
+        "he he"
+        "ma as"
+        "fo fo"
+    ;
+    header{
+        grid-area: he;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+    }
+    main{
+        grid-area: ma;
+        background-color: $lightgreyback;
+        h2{
+            color: $blacktext;
+            padding: 1rem;
+            background-color: $whiteback;
+        }
+
+    }
+    aside{
+        grid-area: as;
+
+    }
+    footer{
+        grid-area: fo;
+    }
+}
+
