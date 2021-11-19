@@ -18,16 +18,24 @@
         justify-content: space-around;
         align-items: center;
         overflow: hidden;
+        background-color: $wholelottared ;
     }
     main{
         grid-area: ma;
         background-color: $lightgreyback;
+        height: auto;
+        width: 90%;
+        
+        // sätt mig center och en vitt bakgrund eller nåt
+
         h2{
             color: $blacktext;
             padding: 1rem;
             background-color: $whiteback;
         }
-
+        p{
+            padding: 2rem;
+        }
     }
     aside{
         grid-area: as;

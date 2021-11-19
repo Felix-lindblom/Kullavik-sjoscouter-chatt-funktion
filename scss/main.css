@@ -37,14 +37,21 @@ a {
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  background-color: #960a0a;
 }
 .wrapper main {
   grid-area: ma;
+  background-color: #646464;
+  height: auto;
+  width: 90%;
 }
 .wrapper main h2 {
   color: #020202;
   padding: 1rem;
   background-color: #fafafa;
+}
+.wrapper main p {
+  padding: 2rem;
 }
 .wrapper aside {
   grid-area: as;
