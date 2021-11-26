@@ -24,22 +24,38 @@
         grid-area: ma;
         background-color: $lightgreyback;
         height: auto;
-        width: 90%;
         
-        // sätt mig center och en vitt bakgrund eller nåt
-
-        h2{
-            color: $blacktext;
-            padding: 1rem;
-            background-color: $whiteback;
-        }
-        p{
-            padding: 2rem;
+        @include center;
+        article{
+            max-width: 50rem;
+            margin: 1rem;
+            background-color: $grey;
+            h2{
+                color: $blacktext;
+                padding: 1rem;
+                background-color: $whiteback;
+            }
+            p{
+                padding: 2rem;
+            }
         }
     }
     aside{
         grid-area: as;
+        //tillfällig
+        background-color: hotpink; 
+        max-width: 20rem;
+        button{
+            background: none;
+        }
 
+        img{
+            background: none;
+            height: 5rem;
+            width: auto;
+
+        };
+        
     }
     footer{
         grid-area: fo;

@@ -43,18 +43,36 @@ a {
   grid-area: ma;
   background-color: #646464;
   height: auto;
-  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.wrapper main h2 {
+.wrapper main article {
+  max-width: 50rem;
+  margin: 1rem;
+  background-color: #575757;
+}
+.wrapper main article h2 {
   color: #020202;
   padding: 1rem;
   background-color: #fafafa;
 }
-.wrapper main p {
+.wrapper main article p {
   padding: 2rem;
 }
 .wrapper aside {
   grid-area: as;
+  background-color: hotpink;
+  max-width: 20rem;
+}
+.wrapper aside button {
+  background: none;
+}
+.wrapper aside img {
+  background: none;
+  height: 5rem;
+  width: auto;
 }
 .wrapper footer {
   grid-area: fo;
