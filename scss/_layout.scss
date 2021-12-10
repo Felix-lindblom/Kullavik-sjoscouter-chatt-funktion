@@ -43,22 +43,65 @@
     aside{
         grid-area: as;
         //tillfällig
-        background-color: hotpink; 
         max-width: 20rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        @include center;
+        justify-content: flex-start;
+        padding-top: 4rem;
+        padding: 2rem;
         button{
-            background: none;
+            background: $wholelottared;
+            height: $BBsizeH;
+            width: $BBsizeW;
+            border-radius: $BBsizeH;
+            border: 0rem solid;
+            border-color: $darkfooter;
+            @include SmBaSh       
+            a{
+                text-decoration: none;
+                font-size: $ps;
+            }
         }
 
         img{
             background: none;
-            height: 5rem;
+            height: 7rem;
             width: auto;
-
-        };
-        
+        }
     }
     footer{
         grid-area: fo;
+        padding: 1.5rem;
+        background-color: $darkfooter;
+
     }
 }
 
+// __________________________
+
+.wrapper-help{
+    height: 100vh;
+    width: 100vw;
+    background-color: $darkgrey;
+    @include center;
+    a{
+        color: $whitetext;
+        position: absolute;
+        left: 2rem ;
+        top: 2rem;
+        background-color: $wholelottared;
+        padding: 1rem;
+        border-radius: 1rem;
+        text-decoration: none;
+        @include SmBaSh;
+    }
+    article{
+        background-color: $whiteback;
+        max-width: 50rem;
+        width: 90vw;
+        height: 80vh;
+    }
+    
+}

@@ -63,19 +63,66 @@ a {
 }
 .wrapper aside {
   grid-area: as;
-  background-color: hotpink;
   max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4rem;
+  padding: 2rem;
 }
 .wrapper aside button {
-  background: none;
+  background: #960a0a;
+  height: 7rem;
+  width: 10rem;
+  border-radius: 7rem;
+  border: 0rem solid;
+  border-color: #232323;
+  box-shadow: 0.08rem 0.07rem 0.1rem 0.06rem rgba(250, 250, 250, 0.2);
+}
+.wrapper aside button a {
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 .wrapper aside img {
   background: none;
-  height: 5rem;
+  height: 7rem;
   width: auto;
 }
 .wrapper footer {
   grid-area: fo;
+  padding: 1.5rem;
+  background-color: #232323;
+}
+
+.wrapper-help {
+  height: 100vh;
+  width: 100vw;
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper-help a {
+  color: #ededed;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  background-color: #960a0a;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.wrapper-help article {
+  background-color: #fafafa;
+  max-width: 50rem;
+  width: 90vw;
+  height: 80vh;
 }
 
 h1 {
@@ -106,6 +153,14 @@ a {
 *, html {
   padding: 0%;
   margin: 0%;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 img {
