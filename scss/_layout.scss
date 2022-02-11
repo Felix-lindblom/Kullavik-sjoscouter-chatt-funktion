@@ -58,12 +58,12 @@
             border-radius: $BBsizeH;
             border: 0rem solid;
             border-color: $darkfooter;
-            @include SmBaSh       
-            a{
-                text-decoration: none;
-                font-size: $ps;
+            @include SmBaSh;    
+                a{
+                    text-decoration: none;
+                    font-size: $ps;
+                }
             }
-        }
 
         img{
             background: none;
@@ -81,33 +81,27 @@
 
 // __________________________
 
-#help-wrapper{
+.help-wrapper{
     height: 100vh;
     width: 100vw;
     background-color: $darkgrey;
     @include center;
-    a{
-        color: $whitetext;
-        position: absolute;
-        left: 2rem ;
-        top: 2rem;
-        background-color: $wholelottared;
-        padding: 1rem;
-        border-radius: 1rem;
-        text-decoration: none;
-        @include SmBaSh;
-    }
     header{
         position: absolute;
-        top: 0px;
-        right: 0px;
+        top: 1rem;
+        right: 1rem;
         width: 100vw;
-        height: 20rem;
+        height: 7rem;
         background-color: $wholelottared;
-        img{
-            width: auto;
-            height: fit-content;
+        a{
+            img{
+                height: 5rem;
+                width: auto;
+            }
         }
+
+
+        
     }
     article{
         background-color: $whiteback;

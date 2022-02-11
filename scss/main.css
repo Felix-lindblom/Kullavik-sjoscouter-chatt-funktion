@@ -99,7 +99,7 @@ a {
   background-color: #232323;
 }
 
-.wrapper-help {
+.help-wrapper {
   height: 100vh;
   width: 100vw;
   background-color: #323232;
@@ -108,17 +108,19 @@ a {
   align-items: center;
   flex-direction: column;
 }
-.wrapper-help a {
-  color: #ededed;
+.help-wrapper header {
   position: absolute;
-  left: 2rem;
-  top: 2rem;
+  top: 1rem;
+  right: 1rem;
+  width: 100vw;
+  height: 7rem;
   background-color: #960a0a;
-  padding: 1rem;
-  border-radius: 1rem;
-  text-decoration: none;
 }
-.wrapper-help article {
+.help-wrapper header a img {
+  height: 5rem;
+  width: auto;
+}
+.help-wrapper article {
   background-color: #fafafa;
   max-width: 50rem;
   width: 90vw;
