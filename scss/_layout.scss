@@ -4,8 +4,8 @@
 .wrapper{
     background-color: $darkgrey;
     display: grid;
-    grid-template-columns:3fr 1fr ;
-    grid-template-rows:15rem auto 10rem ;
+    grid-template-columns: 3fr 1fr ;
+    grid-template-rows: 15rem auto 10rem ;
     grid-template-areas: 
         "he he"
         "ma as"
@@ -86,17 +86,19 @@
     max-width: 100vw;
     background-color: $darkgrey;
     @include center;
+    flex-direction: column;
+    justify-content: space-between;
     header{
-        position: absolute;
-        top: 0rem;
-        right: 0rem;
         width: 100vw;
-        height: 7rem;
+        height: auto;
         background-color: $wholelottared;
         a{
+            // margin funkar inte ?
+            margin: 2rem;
+
             img{
                 height: 5rem;
-                width: auto;
+                width: 5rem;
             }
         }
 
@@ -105,28 +107,40 @@
     }
     article{
         background-color: $whiteback;
-        width: 80vw;
+        width: 60%;
         max-width: 70rem;
-        height: 30rem;
+        height: 80%;
         display: flex;
-                    flex-direction: column-reverse;  
+        flex-direction: column-reverse; 
+        border: solid 0.5rem $darkfooter; 
+        margin: 3%;
         form{
-            display: grid;
-            // du är här och fösöker lista ut hur du får det på en rad
-            grid-template-rows: auto 2rem;
-            width: 100%;
-
+            display: flex;
+            justify-content: space-between;
            input{
-               
+               width: 100%;
+               border: solid 0.2rem $chatgrey;
+           }
+           button{
+               text-decoration: none;
+               text-align: center;
+               border-style: none;
+               height: 2rem;
+               width: 5rem;
+               font-size: 1.00rem;
+               color: $whitetext;
+               background-color: $chatgrey;
+           }
+           button:hover{
+               font-size: 1.10rem;
            }
         }
 
         ol{
-            
-            
 
             li{
                 list-style: none;
+                padding: 0.2rem;
             }
         }
     }
