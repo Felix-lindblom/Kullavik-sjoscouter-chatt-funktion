@@ -107,20 +107,24 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .help-wrapper header {
-  width: 100vw;
-  height: auto;
+  width: 100%;
+  height: 15vh;
   background-color: #960a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .help-wrapper header a {
+  display: block;
   margin: 2rem;
 }
 .help-wrapper header a img {
-  height: 5rem;
-  width: 5rem;
+  height: 10vh;
+  width: auto;
 }
 .help-wrapper article {
   background-color: #fafafa;

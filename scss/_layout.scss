@@ -86,19 +86,21 @@
     max-width: 100vw;
     background-color: $darkgrey;
     @include center;
-    flex-direction: column;
-    justify-content: space-between;
+    
     header{
-        width: 100vw;
-        height: auto;
+        width: 100%;
+        height: 15vh;
         background-color: $wholelottared;
+        @include center;
+        align-items: flex-start;
         a{
             // margin funkar inte ?
-            margin: 2rem;
-
+            display: block;
+            margin: 2rem;  
             img{
-                height: 5rem;
-                width: 5rem;
+                height: 10vh;
+                width: auto; 
+               
             }
         }
 
