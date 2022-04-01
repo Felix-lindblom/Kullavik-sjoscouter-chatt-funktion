@@ -157,6 +157,9 @@ a {
 .help-wrapper article form button:hover {
   font-size: 1.1rem;
 }
+.help-wrapper article ol {
+  overflow: scroll;
+}
 .help-wrapper article ol li {
   list-style: none;
   padding: 0.2rem;

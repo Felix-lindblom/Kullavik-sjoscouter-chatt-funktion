@@ -1,0 +1,113 @@
+@import'./variables';
+@import'./typograpghy';
+
+.wrapper{
+    background-color: $darkgrey;
+    display: grid;
+    grid-template-columns:3fr 1fr ;
+    grid-template-rows:15rem auto 10rem ;
+    grid-template-areas: 
+        "he he"
+        "ma as"
+        "fo fo"
+    ;
+    header{
+        grid-area: he;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        background-color: $wholelottared ;
+    }
+    main{
+        grid-area: ma;
+        background-color: $lightgreyback;
+        height: auto;
+        
+        @include center;
+        article{
+            max-width: 50rem;
+            margin: 1rem;
+            background-color: $grey;
+            h2{
+                color: $blacktext;
+                padding: 1rem;
+                background-color: $whiteback;
+            }
+            p{
+                padding: 2rem;
+            }
+        }
+    }
+    aside{
+        grid-area: as;
+        //tillfällig
+        max-width: 20rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        @include center;
+        justify-content: flex-start;
+        padding-top: 4rem;
+        padding: 2rem;
+        button{
+            background: $wholelottared;
+            height: $BBsizeH;
+            width: $BBsizeW;
+            border-radius: $BBsizeH;
+            border: 0rem solid;
+            border-color: $darkfooter;
+            @include SmBaSh;    
+                a{
+                    text-decoration: none;
+                    font-size: $ps;
+                }
+            }
+
+        img{
+            background: none;
+            height: 7rem;
+            width: auto;
+        }
+    }
+    footer{
+        grid-area: fo;
+        padding: 1.5rem;
+        background-color: $darkfooter;
+
+    }
+}
+
+// __________________________
+
+.help-wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: $darkgrey;
+    @include center;
+    header{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 100vw;
+        height: 7rem;
+        background-color: $wholelottared;
+        a{
+            img{
+                height: 5rem;
+                width: auto;
+            }
+        }
+
+
+        
+    }
+    article{
+        background-color: $whiteback;
+        max-width: 50rem;
+        width: 90vw;
+        height: 80vh;
+    }
+    
+}

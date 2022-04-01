@@ -1,0 +1,150 @@
+@import'./variables';
+@import'./typograpghy';
+
+.wrapper{
+    background-color: $darkgrey;
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    grid-template-rows: 15rem auto 10rem ;
+    grid-template-areas: 
+        "he he"
+        "ma as"
+        "fo fo"
+    ;
+    header{
+        grid-area: he;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        background-color: $wholelottared ;
+    }
+    main{
+        grid-area: ma;
+        background-color: $lightgreyback;
+        height: auto;
+        
+        @include center;
+        article{
+            max-width: 50rem;
+            margin: 1rem;
+            background-color: $grey;
+            h2{
+                color: $blacktext;
+                padding: 1rem;
+                background-color: $whiteback;
+            }
+            p{
+                padding: 2rem;
+            }
+        }
+    }
+    aside{
+        grid-area: as;
+        //tillfällig
+        max-width: 20rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        @include center;
+        justify-content: flex-start;
+        padding-top: 4rem;
+        padding: 2rem;
+        button{
+            background: $wholelottared;
+            height: $BBsizeH;
+            width: $BBsizeW;
+            border-radius: $BBsizeH;
+            border: 0rem solid;
+            border-color: $darkfooter;
+            @include SmBaSh;    
+                a{
+                    text-decoration: none;
+                    font-size: $ps;
+                }
+            }
+
+        img{
+            background: none;
+            height: 7rem;
+            width: auto;
+        }
+    }
+    footer{
+        grid-area: fo;
+        padding: 1.5rem;
+        background-color: $darkfooter;
+
+    }
+}
+
+// __________________________
+
+.help-wrapper{
+    height: 100vh;
+    max-width: 100vw;
+    background-color: $darkgrey;
+    @include center;
+    
+    header{
+        width: 100%;
+        height: 15vh;
+        background-color: $wholelottared;
+        @include center;
+        align-items: flex-start;
+        a{
+            // margin funkar inte ?
+            display: block;
+            margin: 2rem;  
+            img{
+                height: 10vh;
+                width: auto; 
+               
+            }
+        }
+
+
+        
+    }
+    article{
+        background-color: $whiteback;
+        width: 60%;
+        max-width: 70rem;
+        height: 80%;
+        display: flex;
+        flex-direction: column-reverse; 
+        border: solid 0.5rem $darkfooter; 
+        margin: 3%;
+        form{
+            display: flex;
+            justify-content: space-between;
+           input{
+               width: 100%;
+               border: solid 0.2rem $chatgrey;
+           }
+           button{
+               text-decoration: none;
+               text-align: center;
+               border-style: none;
+               height: 2rem;
+               width: 5rem;
+               font-size: 1.00rem;
+               color: $whitetext;
+               background-color: $chatgrey;
+           }
+           button:hover{
+               font-size: 1.10rem;
+           }
+        }
+
+        ol{
+
+            li{
+                list-style: none;
+                padding: 0.2rem;
+            }
+        }
+    }
+    
+}

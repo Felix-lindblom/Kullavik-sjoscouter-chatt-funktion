@@ -1,0 +1,25 @@
+$darkgrey:rgb(50, 50, 50);
+$whitetext:rgb(237, 237, 237);
+$blacktext: rgb(2,2,2);
+$whiteback: rgb(250,250,250);
+$lightgreyback: rgb(100,100,100);
+$wholelottared: rgb(150, 10, 10); 
+$darkfooter:rgb(35,35,35);
+$grey: rgb(87, 87, 87);
+$BBsizeH: 7rem;
+$BBsizeW: 10rem;
+$h3s:2.3rem;
+$h2s:2rem;
+$ps:1.5rem;
+
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin SmBaSh {
+    box-shadow: .08rem .07rem .1rem .06rem rgba(250, 250, 250, 0.2);     
+}
